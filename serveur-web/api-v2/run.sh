@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-echo "initialise les variables d'environnements..."
+echo "Initialise les variables d'environnement..."
 FLASK_APP=app.py
 FLASK_ENV=development
 FLASK_DEBUG=1
@@ -27,5 +27,5 @@ elif command -v virtualenv >/dev/null &2>1; then
 	source env/bin/activate
 	flask run
 else
-	echo "Pipenv et virtualenv non trouvé! Roule le truc toi même"
+	echo "Pipenv et virtualenv non trouvé! Roule le truc toi-même."
 fi
