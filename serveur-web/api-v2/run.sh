@@ -21,11 +21,11 @@ FLASK_ENV=development
 FLASK_DEBUG=1
 
 if command -v pipenv >/dev/null &2>1; then
-    pipenv run flask run
+	pipenv run flask run
 elif command -v virtualenv >/dev/null &2>1; then
-    echo "Source l'environnement..."
-    source env/bin/activate
-    flask run
+	echo "Source l'environnement..."
+	source env/bin/activate
+	flask run
 else
-    echo "Pipenv et virtualenv non trouvé! Roule le truc toi même"
+	echo "Pipenv et virtualenv non trouvé! Roule le truc toi même"
 fi
